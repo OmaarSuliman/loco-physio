@@ -1,0 +1,54 @@
+{
+    "title": "Muscle Action Potential",
+    "questions": [
+      {
+        "question": "2. In the neuromuscular junction, what happens after Na+ ions get into the synaptic gutter?",
+        "options": [
+          "Muscle action potential occurs",
+          "Acetylcholine is destroyed",
+          "Ca+2 ions get into the synaptic knob",
+          "End plate potential occurs"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "4. Neuromuscular transmission:",
+        "options": [
+          "Is caused by release of acetylcholine from the muscle side of the M.E.P.",
+          "Is blocked by curare because it competes with Na+ influx at the M.E.P.",
+          "Is accelerated by hexamethonium and botulinum toxin.",
+          "Shows a permeability change to Na+ and K+ at the receptor side of the neuromuscular transmission"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "8. At the NMJ:",
+        "options": [
+          "The muscle membrane possesses muscarinic receptors.",
+          "There's a one-to-one transmission of excitatory impulses from the motor neuron to the muscle fibres it innervates",
+          "The motor nerve endings secret noradrenaline",
+          "The typical summed end plate potential is usually 10 times the potential necessary to trigger an action potential"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "9. During neuromuscular transmission, the arrival of nerve action potential at the synaptic knob leads to which of the following:",
+        "options": [
+          "Opening of Na+ channels",
+          "Opening of K+ channels",
+          "Opening of Ca+2 channels"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "10. The correct temporal sequence for events at the NMJ:",
+        "options": [
+          "AP in the motor nerve, depolarization of muscle end plate, uptake of Ca+2 into the presynaptic nerve terminal",
+          "Uptake of Ca+2 into the presynaptic nerve terminal, release of ACh, depolarization of muscle end plate",
+          "Release of ACh, AP in motor nerve, AP in the muscle",
+          "Uptake of Ca+2 into the presynaptic nerve terminal, AP in motor end plate, AP in the muscle"
+        ],
+        "correct": 1
+      }
+    ]
+  }

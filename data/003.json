@@ -1,0 +1,65 @@
+{
+    "title": "Muscle Excitation-Contraction Coupling",
+    "questions": [
+      {
+        "question": "1. The role of transverse tubules in the excitation of skeletal muscle contraction is:",
+        "options": [
+          "To provide an inward path for the spread of muscle action potential.",
+          "To serve as the storage site for calcium ions.",
+          "To connect the sarcomeres end to end.",
+          "To allow entrance of Ca++ through Ca++ channels during the action potential."
+        ],
+        "correct": 0
+      },
+      {
+        "question": "2. The primary role of calcium in the activation of skeletal muscle is:",
+        "options": [
+          "To cause depolarization of the muscle cell plasma membrane.",
+          "To remove the inhibition of the reaction between the actin filaments and the myosin filaments.",
+          "To activate the myosin molecules so that they can interact with actin filaments.",
+          "To help the release of Ca++ from sarcoplasmic reticulum."
+        ],
+        "correct": 1
+      },
+      {
+        "question": "3. Excitation-contraction coupling in skeletal muscle:",
+        "options": [
+          "Is mediated by the influx of Ca++ ions from the extra cellular fluid.",
+          "Ca++ ions either enter the cell from the extra cellular fluid or released from sarcoplasmic reticulum.",
+          "Is mediated via the sodium-calcium exchange mechanism.",
+          "Occurs when there is a change in the transmembrane potential."
+        ],
+        "correct": 3
+      },
+      {
+        "question": "4. The transverse tubule system of striated muscle:",
+        "options": [
+          "Stores Ca++ for release during excitation contraction coupling.",
+          "Conducts action potential to the interior of the cell.",
+          "Contains cal-sequestrin to bind Ca++ ions.",
+          "Pumps Ca++ ions from the ECF into the S.R."
+        ],
+        "correct": 1
+      },
+      {
+        "question": "5. During excitation-contraction coupling, all of the following occurs except:",
+        "options": [
+          "The action potential enters inside the muscle fibers via the T system.",
+          "Mg++ ions are released from the sarcoplasmic reticulum and act as activators.",
+          "Ca++ ions increase the ATPase activity.",
+          "Ca++ ions block the action of the relaxing proteins (troponin and tropomyosin)."
+        ],
+        "correct": 1
+      },
+      {
+        "question": "6. Normal relaxation of skeletal muscle is the result of:",
+        "options": [
+          "A decrease in ATP concentration within the sarcomere.",
+          "Breakdown of acetyl choline at Motor-end plate.",
+          "Active transport of Ca++ into the sarcoplasmic reticulum.",
+          "An increase in intracellular PH."
+        ],
+        "correct": 2
+      }
+    ]
+  }

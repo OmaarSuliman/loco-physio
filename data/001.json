@@ -1,0 +1,59 @@
+{
+    "title": "Structure of the Neuromuscular Junction (End Plate)",
+    "questions": [
+      {
+        "question": "1. In a skeletal muscle consisting of 1000 muscle fibres where every 10 fibers are innervated by a single neuron, how many motor units are in this muscle?",
+        "options": [
+          "1000",
+          "100",
+          "10",
+          "500"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "7. Which is the storage site for neurotransmitter before release?",
+        "options": [
+          "Presynaptic cell terminal",
+          "Synaptic vesicles",
+          "Synaptic cleft",
+          "Post synaptic cell"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "8. At the NMJ:",
+        "options": [
+          "The muscle membrane possesses muscarinic receptors.",
+          "There's a one-to-one transmission of excitatory impulses from the motor neuron to the muscle fibres it innervates",
+          "The motor nerve endings secrete noradrenaline",
+          "The typical summed end plate potential is usually 10 times the potential necessary to trigger an action potential"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "True or false: The synaptic knob contains in its cytoplasm multiple synaptic vesicles which contain cholinesterase enzyme.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "True or false: The synaptic gutter contains multiple voltage-gated Ca+2 channels.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "True or false: The synaptic cleft contains the acetylcholinesterase enzyme.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      }
+    ]
+  }
