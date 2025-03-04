@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo-i.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locomotor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      <a href="https://mantek-med.vercel.app/">
+        <img src="Assets/mantek.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="title" id="subject-title">Loading...</div>
+    <label class="toggle-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider">
+        <span class="icon icon-sun">
+          <img src="Assets/sun.svg" alt="Sun">
+        </span>
+        <span class="icon icon-moon">
+          <img src="Assets/moon.svg" alt="Moon">
+        </span>
+        <span class="knob"></span>
+      </span>
+    </label>
+  </header>
+
+  <main id="menu-container">
+    <div id="quiz-list"></div>
+  </main>
+
+  <footer>
+    &copy; <span id="current-year"></span> khomod inc. All rights reserved.
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Theme toggle with localStorage
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeToggle.checked = true;
+    }
+    themeToggle.addEventListener('change', () => {
+      if (themeToggle.checked) {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Load and render quizzes
+    fetch('data/manifest.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('subject-title').textContent = data.title;
+        const quizList = document.getElementById('quiz-list');
+        
+        // Create individual quiz links
+        data.quizzes.forEach(quiz => {
+          const scoreData = localStorage.getItem(`quiz_score_${quiz.path}`);
+          const score = scoreData ? JSON.parse(scoreData) : null;
+          
+          const link = document.createElement('a');
+          link.href = `quiz.html?file=${encodeURIComponent(quiz.path)}`;
+          link.className = 'quiz-item';
+          link.innerHTML = `
+            <div class="quiz-info">
+              <span class="quiz-title">${quiz.title}</span>
+              ${score ? `
+                <span class="last-score">
+                  Last: ${score.score}/${score.total}
+                  <span class="score-date">${new Date(score.timestamp).toLocaleDateString()}</span>
+                </span>
+              ` : ''}
+            </div>
+            <span class="chevron">›</span>
+          `;
+          quizList.appendChild(link);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading manifest:', error);
+        document.getElementById('quiz-list').innerHTML = 
+          '<div class="error">Unable to load quizzes. Please try again later.</div>';
+      });
+  </script>
+</body>
+</html>
