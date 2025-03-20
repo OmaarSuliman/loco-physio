@@ -1,8 +1,8 @@
 {
   "title": "Physiology",
   "quizzes": [
-    {"title": "Structure of the end plate", "path": "data/001.json"},
-    {"title": "Muscle action potential", "path": "data/002.json"},
-    {"title": "Muscle excitation contraction coupling", "path": "data/003.json"}
+    {"title": "Structure of the end plate", "path": "data/physio_001.json"},
+    {"title": "Muscle action potential", "path": "data/physio_002.json"},
+    {"title": "Muscle excitation contraction coupling", "path": "data/physio_003.json"}
   ]
 }
